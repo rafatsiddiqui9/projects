@@ -8,7 +8,7 @@ vars:
   # XXX Change to your actual GPU ID
   gpu_id: 0
   # XXX fill with your local path to OntoNotes
-  ontonotes: /content/projects/experimental/coref/project.yml
+  ontonotes: /content/projects/experimental/coref/ontonotes
   max_epochs: 20
   # File to use for data in ci testing
   test_file: assets/litbank/95_the_prisoner_of_zenda_brat.conll

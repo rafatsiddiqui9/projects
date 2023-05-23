@@ -64,14 +64,14 @@ commands:
   - name: "prep-ontonotes-data"
     help: "Rehydrate the data using OntoNotes"
     script: 
-      - bash scripts/prep_data.sh "${vars.ontonotes}"
+      - bash scripts/prep_data.sh "${/content/projects/experimental/coref/project.yml}"
     deps:
       - assets/conll-2012-development.v4.tar.gz
       - assets/conll-2012-test-key.tar.gz
       - assets/conll-2012-test-official.v9.tar.gz
       - assets/conll-2012-train.v4.tar.gz
       - assets/conll-2012/v3/scripts/skeleton2conll.sh
-      - ${vars.ontonotes}
+      - ${/content/projects/experimental/coref/project.yml}
     outputs: 
       - assets/train.gold.conll
       - assets/dev.gold.conll
